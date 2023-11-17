@@ -27,7 +27,7 @@ pytest==7.2.0
 python-dateutil==2.8.1
 scan-build==2.0.19
 scipy==1.10.0
-six==1.15.0
+six==1.16.0
 sympy==1.7.1
 toml==0.10.2
 tomli==2.0.1
