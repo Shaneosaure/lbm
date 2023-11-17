@@ -1,5 +1,5 @@
 appdirs==1.4.4
-attrs==21.2.0
+attrs==23.1.0
 cloudpickle==1.6.0
 cycler==0.10.0
 distlib==0.3.1
