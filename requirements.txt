@@ -16,7 +16,7 @@ mpmath==1.2.1
 numba==0.56.4
 numpy==1.22.0
 packaging==21.3
-Pillow==9.0.1
+Pillow==10.0.1
 pluggy==1.0.0
 py==1.11.0
 pyglet==1.5.11
