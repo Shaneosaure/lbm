@@ -39,9 +39,9 @@ class vent(base_app):
 
         # Obstacles
         self.obstacles = []
-        square1 = obstacle('square1', 4, 100, 'square', 1.8, [1.5,1.0])
+        square1 = obstacle('square1', 4, 100, 'square', 1.6, [1.5,1.0])
         self.obstacles.append(square1)
-        square2 = obstacle('square2', 4, 100, 'square', 1.8, [1.5,-1.0])
+        square2 = obstacle('square2', 4, 100, 'square', 1.6, [1.5,-1.0])
         self.obstacles.append(square2)
 
     ### Compute remaining lbm parameters
