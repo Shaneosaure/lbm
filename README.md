@@ -5,7 +5,7 @@
 A simple lattice-Boltzmann code for 2D flow resolutions.
 
 <p align="center">
-  <img width="800" alt="" src="lbm/save/header.gif">
+  <img width="800" alt="" src="save/header.gif">
 </p>
 
 ## Contents
@@ -20,7 +20,7 @@ This LBM code includes:
 
 ## Running simulations
 
-Cases are described in the `lbm/src/app/` repository. To run a simulation, adjust the parameters in the related python file, then run `python3 start.py <app_name>`. A results folder will be generated in `./results/` with the current date and time. If you wish to add a new application, you must create a new app, and register it in the factory, located in `lbm/src/app/app.py`. Below are some examples and benchmarks that were ran with the code. The related cases are available in the repository. The computational times are obtained on a standard laptop.
+Cases are described in the `src/app/` repository. To run a simulation, adjust the parameters in the related python file, then run `python3 start.py <app_name>`. A results folder will be generated in `./results/` with the current date and time. If you wish to add a new application, you must create a new app, and register it in the factory, located in `src/app/app.py`. Below are some examples and benchmarks that were ran with the code. The related cases are available in the repository. The computational times are obtained on a standard laptop.
 
 ## Benchmarks
 
@@ -29,13 +29,13 @@ Cases are described in the `lbm/src/app/` repository. To run a simulation, adjus
 A simple driven cavity in unit square. Below are the computed time-domain velocity norms at `Re=100` (left) and `Re=1000` (right).
 
 <p align="center">
-  <img width="300" alt="" src="lbm/save/driven_cavity/re_100_nx_200/anim-opt.gif"> <img width="300" alt="" src="lbm/save/driven_cavity/re_1000_nx_250/anim-opt.gif">
+  <img width="300" alt="" src="save/driven_cavity/re_100_nx_200/anim-opt.gif"> <img width="300" alt="" src="save/driven_cavity/re_1000_nx_250/anim-opt.gif">
 </p>
 
 A comparison of `u = f(y)` and `v = f(x)` at the center of the domain with reference data from <a href="https://www.sciencedirect.com/science/article/pii/0021999182900584">"U. Ghia, K. N. Ghia, C. T. Shin, *High-Re solutions for incompressible flow using Navier-Stokes equations and multigrid method*"</a>.
 
 <p align="center">
-  <img width="300" alt="" src="lbm/save/driven_cavity/re_100_nx_200/re_100.png"> <img width="300" alt="" src="lbm/save/driven_cavity/re_1000_nx_250/re_1000.png">
+  <img width="300" alt="" src="save/driven_cavity/re_100_nx_200/re_100.png"> <img width="300" alt="" src="save/driven_cavity/re_1000_nx_250/re_1000.png">
 </p>
 
 ### Turek benchmark
@@ -51,7 +51,7 @@ The Turek cylinder benchmark CFD case is described in <a href="https://link.spri
 Below is a video of the 2D-2 case:
 
 <p align="center">
-  <img width="800" alt="" src="lbm/save/turek/re_100_ny_200/turek.gif">
+  <img width="800" alt="" src="save/turek/re_100_ny_200/turek.gif">
 </p>
 
 ## Applications
@@ -61,7 +61,7 @@ Below is a video of the 2D-2 case:
 An array of square obstacles at `Re=2000`, with `ny=200`. This computation took approx 20 minutes on my laptop, although the accuracy here is questionable.
 
 <p align="center">
-  <img width="800" alt="" src="lbm/save/array/array.gif">
+  <img width="800" alt="" src="save/array/array.gif">
 </p>
 
 ### Double step in channel
@@ -69,6 +69,6 @@ An array of square obstacles at `Re=2000`, with `ny=200`. This computation took 
 Two steps in a channel at `Re=500`, with `ny=150`. This computation took approx 15 minutes on my laptop.
 
 <p align="center">
-  <img width="800" alt="" src="lbm/save/step/step.gif">
+  <img width="800" alt="" src="save/step/step.gif">
 </p>
 
