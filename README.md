@@ -1,7 +1,5 @@
 # lbm
 
-![master badge](https://github.com/jviquerat/lbm/workflows/lbm/badge.svg?branch=master)
-
 A simple lattice-Boltzmann code for 2D flow resolutions.
 
 <p align="center">
@@ -71,4 +69,3 @@ Two steps in a channel at `Re=500`, with `ny=150`. This computation took approx 
 <p align="center">
   <img width="800" alt="" src="save/step/step.gif">
 </p>
-
