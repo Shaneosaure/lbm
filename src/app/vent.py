@@ -11,13 +11,13 @@ from lbm.src.plot.plot     import *
 ###############################################
 ### A vent with modified inlets/outlets
 class vent(base_app):
-    def __init__(self, width=0.8, u_lbm=0.05):
+    def __init__(self, width=0.8):
 
         # Free arguments
         self.name        = 'vent'
         self.Re_lbm      = 500.0
         self.L_lbm       = 150
-        self.u_lbm       = u_lbm
+        self.u_lbm       = 0.05
         self.rho_lbm     = 1.0
         self.t_max       = 15.0
         self.x_min       =-1.0
