@@ -11,13 +11,13 @@ from lbm.src.plot.plot     import *
 ###############################################
 ### A vent with modified inlets/outlets
 class vent(base_app):
-    def __init__(self):
+    def __init__(self, width=0.8, u_lbm=0.05):
 
         # Free arguments
         self.name        = 'vent'
         self.Re_lbm      = 500.0
         self.L_lbm       = 150
-        self.u_lbm       = 0.05
+        self.u_lbm       = u_lbm
         self.rho_lbm     = 1.0
         self.t_max       = 15.0
         self.x_min       =-1.0
@@ -28,6 +28,7 @@ class vent(base_app):
         self.stop        = 'it'
         self.obs_cv_ct   = 1.0e-3
         self.obs_cv_nb   = 1000
+        self.width= width/2
 
         # Output parameters
         self.output_freq = 500
@@ -39,10 +40,13 @@ class vent(base_app):
 
         # Obstacles
         self.obstacles = []
-        square1 = obstacle('square1', 4, 100, 'square', 1.6, [1.5,1.0])
+        square1 = obstacle('square1', 4, 100, 'square', 2-self.width, [1.5,1.0])
         self.obstacles.append(square1)
-        square2 = obstacle('square2', 4, 100, 'square', 1.6, [1.5,-1.0])
+        square2 = obstacle('square2', 4, 100, 'square', 2-self.width, [1.5,-1.0])
         self.obstacles.append(square2)
+
+    def get_obstacles(self):
+        return self.obstacles()
 
     ### Compute remaining lbm parameters
     def compute_lbm_parameters(self):
